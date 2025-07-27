@@ -74,7 +74,7 @@ const verifyHmac = (
     receivedBody,
     secret
 ) => {
-    const hmacParts = receivedHmacHeader.split(' ')
+    const hmacParts = receivedHmacHeader.split('=')
     const receivedHmac = hmacParts[1]
     const hash = crypto
         .createHmac(hmacParts[0], secret)
@@ -134,7 +134,7 @@ port = 8080
 
 # Signature verification
 def verifyHmac(received_hmac_header, received_body, secret):
-    hmac_parts = received_hmac_header.split(' ')
+    hmac_parts = received_hmac_header.split('=')
     received_hmac = hmac_parts[1]
     hash = hmac.new(bytes(secret, 'UTF-8'), received_body, hashlib.sha256).hexdigest()
     return received_hmac == hash
