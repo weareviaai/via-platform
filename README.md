@@ -43,7 +43,7 @@ VIA implements a security mechanism for webhook authentication by employing a di
 
 ```HMAC-SHA256 = {Base64(HmacSHA256(body_bytes, YOUR_WEBHOOK_SECRET))}```
 
-To verify the request came from VIA, compute an HMAC digest using your secret key and the body and compare it to the signature portion (after the space) contained in the header. If they match, you can be sure the webhook was sent from VIA. Otherwise, ensure your code returns an unspecific error immediately without invoking additional logic.
+> To verify the request came from VIA, compute an HMAC digest using your secret key and the body and compare it to the signature portion (after the space) contained in the header. If they match, you can be sure the webhook was sent from VIA. Otherwise, ensure your code returns an unspecific error immediately without invoking additional logic.
 
 This signature header property contains the SHA algorithm used to generate the signature, a space, and the signature itself. 
 
@@ -55,7 +55,7 @@ e.g. signature: sha256 37d2725109df92747ffcee59833a1d1262d74b9703fa1234c78940721
 
 ### Samplle VIA Webhook Receiver
 
-Use the VIA Console to obtain your unique webhook secret. 
+> Use the VIA Console to obtain your unique webhook secret
 
 ### node.js
 
