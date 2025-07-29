@@ -34,7 +34,8 @@ VIA will call your webhook with the following payload:
 From the VIA Console, define a new webhook to receive reply messages. **You must enable and verify the webhook in order to activate it**.
 VIA will attempt to call your webhook up to 5 tries using the following strategy:
 ```
-(Next Attempt Timestamp) = (First Attempt Timestamp) + (Retry Attempt) * 5000 mSec 
+(Next Attempt Timestamp) = (Initial Delay) * 2 ^ (Retry Attempt)
+Initial delay is normally set to 1 second but may change slightly depending on system load  
 ```
 
 ### Authenticating Your Webhook
