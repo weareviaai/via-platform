@@ -51,7 +51,7 @@ This signature header property contains the SHA algorithm used to generate the s
 
 e.g. signature: sha256=37d2725109df92747ffcee59833a1d1262d74b9703fa1234c789407218b4a4ef
 
-**You must verify your webhook from the VIA Console so that it will be called.** 
+> You must verify your webhook from the VIA Console so that it will be called 
 
 ### Samplle VIA Webhook Receiver
 
