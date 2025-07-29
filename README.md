@@ -35,8 +35,8 @@ From the VIA Console, define a new webhook to receive reply messages. **You must
 VIA will attempt to call your webhook up to 5 tries using the following strategy:
 ```
 (Next Attempt Timestamp) = (Initial Delay) * 2 ^ (Retry Attempt)
-Initial delay is normally set to 1 second but may change slightly depending on system load  
 ```
+> Initial delay is normally set to 1 second but may change slightly depending on system load  
 
 ### Authenticating Your Webhook
 
