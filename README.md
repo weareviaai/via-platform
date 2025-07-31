@@ -46,7 +46,7 @@ VIA implements a security mechanism for webhook authentication by employing a di
 
 > To verify the request came from VIA, compute an HMAC digest using your secret key and the body and compare it to the signature portion (after the space) contained in the header. If they match, you can be sure the webhook was sent from VIA. Otherwise, ensure your code returns an unspecific error immediately without invoking additional logic.
 
-This signature header property contains the SHA algorithm used to generate the signature, a space, and the signature itself. 
+This signature header property contains the SHA algorithm used to generate the signature e.g. sha256, a '=' separator, and the signature itself. 
 
 ```signature: sha256 HMAC-SHA256```
 
