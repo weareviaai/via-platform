@@ -73,7 +73,7 @@
         "room_preferences": [],
         "flight_attributes": [
             "direct flight",
-            "direct flights"
+            "first class"
         ],
         "hotel_preferences": [
             "near termini station",
