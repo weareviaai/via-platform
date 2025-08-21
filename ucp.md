@@ -14,7 +14,7 @@
   "trip_reason": "vacation",
   "sold_product": "package",
   "children_ages": [],
-  "customer_name": "אורן",
+  "customer_name": "John",
   "vacation_type": [
     "couple"
   ],
