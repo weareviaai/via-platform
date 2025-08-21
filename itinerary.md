@@ -99,6 +99,8 @@
       "total_price_all_travelers": 923
     }
   ],
+  "user_id": "user@example.com",
+  "aup_id": "90d3855d-628d-4e71-b01a-94258e7dab7c",
   "user_name": "Oren",
   "booking_info": {
     "booking_children_ages": "",
