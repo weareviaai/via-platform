@@ -4,19 +4,20 @@
 
 To post a message to a conversation message to a VIA concierge:
 
-```json
+```
 POST /api/message
-
+```
 With the following body payload (example):
+```json
 {
-    "project_id": 43,
+    "project_id": 770,
     "from_id": "user@wearevia.ai",
     "message_text": "What events take place in San Diego in Oct 17-19, 2025?",
     "new_conversation": true,
     "language": "en",
     "params": {
         "param1": "param1 value",
-        "param2"; "param2 value"
+        "param2": "param2 value"
     }
 }
 ```
@@ -26,6 +27,17 @@ With the following body payload (example):
 - new_conversation: Use true to start a new conversation. If false, and a conversation already exists for the specified from_id the conversation will continue. Otherwise a new conversation will be created.
 - language: optional language identifier
 - params: Optional parameters. Parameters are accessible via instruction variables
+
+The response:
+
+```json
+{
+    "success": true,
+    "conversation_id": "r7z2vGJGukw610UQwonSl50y"
+}
+```
+
+Use the ``conversation_id`` returned value to correlate the response over webhook with the appropriate message that was sent. Messages are always delivered in the order they were received.  
 
 
 ## Receiving VIA Platform Events using Webhooks
@@ -38,9 +50,7 @@ VIA will call your webhook with the following payload:
   "timstamp": "<TIMESTAMP IN ISO FORMAT>",
   "project_id": "<PROJECT ID>",
   "event_id": "<EVENT_ID>", 
-  "event_payload": {
-    // Event specific payload
-  }
+  "event_payload": "<EVENT PAYLOAD OBJECT>"
 }
 ```
 ## Supported Webhooks Event Types
@@ -63,18 +73,18 @@ This event will be generated as a response to a ``/api/message`` call. The respo
 ```json
 {
   "via_api_reply": {
-    "response_type": "<The presentation schema name>",
-    "response": "<AI generated presentation object>"
+    "response_type": "<RESPONSE TYPE>",
+    "response": "<AI GENERATED PRESENTATION OBJECT>"
   },
   "followon": "How can I help you?",
   "options": [
     {
-      "label": "Ask about another place",
-      "description": "<AI generated description>"
+      "label": "Ask me another question",
+      "description": "<AI GENERATED DESCRIPTION>"
     },
     {
-      "label": "Get more info",
-      "description": "<AI generated description>"
+      "label": "Continue",
+      "description": "<AI GENERATED DESCRIPTION>"
     }
   ]
 }
