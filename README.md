@@ -21,12 +21,12 @@ With the following body payload (example):
     }
 }
 ```
-- project_id: Your concierge project ID (viewable from the VIA AI Console)
-- from_id: A unique user identifier
-- message_text: Your message text
-- new_conversation: Use true to start a new conversation. If false, and a conversation already exists for the specified from_id the conversation will continue. Otherwise a new conversation will be created.
-- language: optional language identifier
-- params: Optional parameters. Parameters are accessible via instruction variables
+- ``project_id``: Your concierge project ID (viewable from the VIA AI Console)
+- ``from_id``: A unique user identifier
+- ``message_text``: Your message text
+- ``new_conversation``: Use true to start a new conversation. If false, and a conversation already exists for the specified from_id the conversation will continue. Otherwise a new conversation will be created.
+- ``language``: optional language identifier
+- ``params``: Optional parameters. Parameters are accessible via instruction variables
 
 The response:
 
