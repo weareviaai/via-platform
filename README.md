@@ -76,7 +76,7 @@ VIA will call your webhook with the following payload:
 ## Supported Webhooks Event Types
 
 #### ``message_reply``
-This event will be generated as a response to a ``/api/message`` call. The response object varies and depends on which schema is used by the AI to render the result. 
+This event will be generated as a response to a ``/api/message`` call. The event payload object varies and depends on which schema is used by the AI to render the result. For example: 
 
 ```json
 {
