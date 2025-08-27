@@ -72,7 +72,7 @@ This event will be generated as a response to a ``/api/message`` call. The respo
 ```json
 {
   "via_api_reply": {
-    "response_type": "<RESPONSE TYPE>",
+    "response_type": "<RESPONSE TYPE (presentation schema name)>",
     "response": "<AI GENERATED PRESENTATION OBJECT>"
   },
   "followon": "How can I help you?",
