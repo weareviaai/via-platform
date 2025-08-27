@@ -1,5 +1,13 @@
 # VIA AI Public Interfaces
 
+## Overview
+
+The following sections reference a few values from your VIA AI tenant account accessible using the VIA AI Console:
+
+- ``Project ID``: The ID of the project is available from the Projects view
+- ``Tenant API Key``: The tenant-specific API key will be made available to you by your VIA AI contact
+- ``Webhook Secret``: The webhook secret is available from the project settings, webhooks configuration view  
+
 ## VIA Messaging API
 
 ### Authentication
