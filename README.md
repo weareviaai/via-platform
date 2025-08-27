@@ -1,6 +1,6 @@
 # VIA AI Public Interfaces
 
-## Overview
+## Prerequisites
 
 The following sections reference a few values from your VIA AI tenant account that are accessible from the VIA AI Console:
 
