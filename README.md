@@ -101,7 +101,7 @@ This event will be generated as a response to a ``/api/message`` call. The event
 
 #### Controlling the Message Output JSON Format Using a Presentation Schema
 
-*Presentation Schemas* can be used to control the returned reply to a message in order to utilize different rendering methods (referring specifically to the ``via_api_reply/response`` property in the returned message payload). The ``via_api_reply/response type`` will contain schema ID used by the AI to format the output. 
+*Presentation Schemas* can be used to control the returned reply to a message in order to utilize different rendering methods (referring specifically to the ``via_api_reply/response`` property in the returned ``message_reply`` payload). The ``via_api_reply/response type`` will contain schema ID used by the AI to format the output. 
 Presentation schemas can be defined from the VIA Console, under the ``Instructions`` tab. You need to provide a unique ID for your schema and for API calls, the platform needs to be ``API``. You may use explicit JSON or use node.js [Zod](https://zod.dev/) module to define it using code.  
 
 When sending a message simply request the result to be returned using the presentation schema ID. For example:
