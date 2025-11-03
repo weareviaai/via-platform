@@ -119,7 +119,7 @@ This event will be generated whenever a user profile has been created or updated
 The event payload will contain the aggregated user profile (AUP, refer to the examples in the repo).
 
 #### ``conversation_profile_created``
-This event will be generated whenever a new conversation profile is created. The conversation profile contains a summary of the conversation is defined at the tenant level by a VIA admin.
+This event will be generated whenever a new conversation profile is created. The conversation profile contains a AI-generated summary of the conversation where the prompt is defined at the tenant level (i.e. is identical for all tenant projects) by a VIA admin.
 User profiles are created and updated based on one or more conversation profile. 
 
 #### ``conversation_issue_created``
