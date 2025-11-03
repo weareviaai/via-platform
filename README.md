@@ -73,6 +73,7 @@ VIA will call your webhook with the following payload:
   "event_payload": "<EVENT PAYLOAD OBJECT>"
 }
 ```
+
 ## Supported Webhooks Event Types
 
 #### ``message_reply``
@@ -97,6 +98,17 @@ This event will be generated as a response to a ``/api/message`` call. The event
   ]
 }
 ```
+
+#### Controlling the Message Output JSON Format Using a Presentation Schema
+
+*Presentation Schemas* can be used to control the returned reply to a message in order to utilize different rendering methods (referring specifically to the ``via_api_reply/response`` property in the returned message payload). The ``via_api_reply/response type`` will contain schema ID used by the AI to format the output. 
+Presentation schemas can be defined from the VIA Console, under the ``Instructions`` tab. You need to provide a unique ID for your schema and for API calls, the platform needs to be ``API``. You may use explicit JSON or use node.js [Zod](https://zod.dev/) module to define it using code.  
+
+When sending a message simply request the result to be returned using the presentation schema ID. For example:
+"What events take place in San Diego in Oct 17-19, 2025? Return your answer using the my_event_response schema"
+
+> Note If a schema cannot be found, the returned payload will be formatted using the default schema which is essentially one block of markdown formatted text. 
+
 
 #### ``itinerary_created``
 This event will be generated whenever a new itinerary is created, usually at the end of a successful conversation.
