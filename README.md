@@ -61,7 +61,7 @@ Use the ``conversation_id`` returned value to correlate the response over webhoo
 
 ## Receiving VIA Platform Events using Webhooks
 
-To receive VIA platform responses you will need to install a webhook via the VIA Console, associate it with one or move events (see below) and verify the webhook successfully against your client. 
+To receive VIA platform responses you will need to install a webhook via the VIA Console, subscribe to the ``message_reply`` event (see below) and verify the webhook successfully against your client. 
 
 VIA will call your webhook with the following payload:
 
