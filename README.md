@@ -120,7 +120,7 @@ The event payload will contain the aggregated user profile (AUP, refer to the ex
 
 #### ``conversation_profile_created``
 This event will be generated whenever a new user conversation profile is created (UCP, refer to the examples in the repo). The conversation profile contains an AI-generated summary (typically using a reasoning model) of the conversation where the prompt is defined at the tenant level (i.e. is identical for all tenant projects) by a VIA admin.
-User profiles are created and updated based on one or more conversation profile. 
+User profiles are created and updated based on one or more conversation profiles. 
 
 #### ``conversation_issue_created``
 This event will be generated whenever the VIA platform detects a conversation with negative sentiment. The detection time depends on how often summarization is applied to the conversation (typically every 1h).
