@@ -89,11 +89,13 @@ This event will be generated as a response to a ``/api/message`` call. The event
   "options": [
     {
       "label": "Ask me another question",
-      "description": "<AI GENERATED DESCRIPTION>"
+      "emoji": "❔",
+      "llm_value": "<AI GENERATED DESCRIPTION>"
     },
     {
       "label": "Continue",
-      "description": "<AI GENERATED DESCRIPTION>"
+      "emoji": "👍",
+      "llm_value": "<AI GENERATED DESCRIPTION>"
     }
   ]
 }
