@@ -90,12 +90,12 @@ This event will be generated as a response to a ``/api/message`` call. The event
     {
       "label": "Ask me another question",
       "emoji": "❔",
-      "llm_value": "<AI GENERATED DESCRIPTION>"
+      "llm_value": "<AI GENERATED VALUE TO BE SENT BACK TO LLM>"
     },
     {
       "label": "Continue",
       "emoji": "👍",
-      "llm_value": "<AI GENERATED DESCRIPTION>"
+      "llm_value": "<AI GENERATED VALUE TO BE SENT BACK TO LLM>"
     }
   ]
 }
