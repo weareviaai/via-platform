@@ -33,7 +33,6 @@ With the following body payload (example):
     "from_id": "user@wearevia.ai",
     "message_text": "What events take place in San Diego in Oct 17-19, 2025?",
     "new_conversation": true,
-    "language": "en",
     "params": {
         "param1": "param1 value",
         "param2": "param2 value"
