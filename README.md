@@ -1,5 +1,14 @@
 # VIA AI Public Interfaces
 
+## Table of Contents
+
+- [Authentication](#authentication)
+- [Sending a message](#sending-a-message)
+- [Authenticating Your Webhook](#authenticating-your-webhook)
+- [Example VIA Webhook Receiver](#example-via-webhook-receiver)
+  - [node.js](#nodejs)
+  - [Python](#python)
+
 ## Prerequisites
 
 The following sections reference a few values from your VIA AI tenant account that are accessible from the VIA AI Console:
