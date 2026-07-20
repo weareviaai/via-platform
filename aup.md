@@ -1,109 +1,125 @@
 ```json
 {
+    "AUP_VERSION": 8,
     "bookings": {
+        "room_type": [
+            "family room",
+            "family room 2 adults 2 children"
+        ],
+        "hotel_names": [],
+        "total_price": [
+            7018.2,
+            3167
+        ],
         "destinations": [
-            "Lisbon",
-            "Larnaca",
-            "Munich"
+            "porto"
         ],
-        "hotel_brands": [
-            "Novotel",
-            "Memmo Principe Real Lisbon A Member Of Design Hotels",
-            "Golden Bay Beach Hotel"
+        "sold_products": [
+            "package"
         ],
-        "airline_brands": [
-            "Austrian Airlines",
-            "El Al",
-            "Ita"
+        "airline_brands": [],
+        "hotel_category": [
+            "Elegant experience"
         ],
-        "trips_booked_count": 3
+        "flight_category": [],
+        "trips_booked_count": 3,
+        "average_price_per_person": [
+            3509.1,
+            792
+        ]
     },
     "behavioral": {
         "security": {
             "True": 0,
-            "False": 1
+            "False": 4
         },
         "stop_reason": {
-            "just_stopped": 1
+            "just_stopped": 3,
+            "satisfied_customer": 1
         },
         "last_sentiment": "positive",
         "asked_for_coupon": {
             "True": 0,
-            "False": 1
+            "False": 4
         },
         "overall_sentiment": {
             "neutral": 0,
             "negative": 0,
-            "positive": 1
+            "positive": 4
         },
         "conversation_end_stage": {
-            "Hotel_detail_shown_but_not_chosen": 1
-        },
-        "wants_to_speak_to_human": false
+            "intent_stage": 3,
+            "hotel_options_offered_but_not_chosen": 1
+        }
     },
-    "AUP_VERSION": 5,
     "preferences": {
-        "room": [],
-        "hotel_brands": [],
-        "airline_brands": [],
+        "departure_city": {
+            "current": "london",
+            "previous": [
+                "manchester"
+            ]
+        },
         "vacation_types": [
-            "family vacation",
-            "couple"
+            "couple",
+            "with friends"
         ],
+        "customer_budget": [],
         "traveling_month": [
-            "september"
+            "july"
         ],
         "vacation_styles": [
-            "urban",
-            "holiday market",
-            "beach"
-        ],
-        "departure_cities": [
-            "Tel Aviv",
-            "london"
+            "urban"
         ],
         "food_preferences": [],
-        "hotel_attributes": [
-            "water slides",
-            "central location",
-            "5-star hotel",
-            "beachfront",
-            "all-inclusive"
-        ],
         "room_preferences": [],
-        "flight_attributes": [
-            "direct flight",
-            "first class"
-        ],
         "hotel_preferences": [
-            "near termini station",
-            "breakfast",
-            "gym"
+            "close to metro rail transportation",
+            "historic center",
+            "charming boutique hotel",
+            "safe area for young adults",
+            "seafront",
+            "great restaurants nearby",
+            "pool",
+            "walkable streets",
+            "ribeira",
+            "beautiful views",
+            "central location"
         ],
-        "medical_condition": [],
-        "departure_airports": [
-            "TLV",
-            "LHR"
-        ],
+        "departure_airports": [],
         "destination_cities": [
-            "rome",
-            "Cyprus",
-            "Munich",
-            "london",
-            "Lisbon"
+            "porto"
         ],
         "flight_preferences": [
-            "direct"
+            "direct flight",
+            "direct flights",
+            "direct flights only"
+        ],
+        "cat_hotel_preferences": [
+            "close to public transport",
+            "near the beach",
+            "close to restaurant",
+            "sea view",
+            "pool",
+            "other",
+            "close to nightlife",
+            "close to attractions",
+            "boutique hotel",
+            "central location"
         ],
         "religious_preferences": [],
         "hotel_brand_preferences": [],
         "airline_brand_preferences": []
     },
     "demographics": {
-        "gender": "Male",
-        "has_children": true,
-        "customer_name": "Oren",
-        "marital_status": "Married"
+        "gender": "male",
+        "spouse_name": "",
+        "children_ages": [
+            10, 15
+        ],
+        "customer_name": "John Smith",
+        "children_names": [],
+        "marital_status": "married",
+        "number_of_children": 2
     }
 }
 ```

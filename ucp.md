@@ -1,88 +1,72 @@
 ```json
 {
-  "UCP_VERSION": 3,
-  "gender": "Male",
-  "nights": 6,
-  "security": false,
-  "synopsis": "The customer, John, contacted the concierge seeking a romantic getaway with good shopping opportunities. Traveling with his spouse, he wanted a couple vacation from September 1 to September 7, 2025 (6 nights) in Limassol, Cyprus. He preferred a centrally located, boutique-style 4-star hotel. After reviewing the options, he chose Alinea Market Agora Square. Flight details were provided via Arkia Israeli Airlines on the cheapest flight option. The total package cost is $1606 for two travelers, averaging $803 per person. The conversation was positive, concise, and met the customer's requirements.",
+  "UCP_VERSION": 4,
+  "aup_id": "03556630-7b72-453c-8319-fcfd7602dabd",
+  "budget": -1,
+  "gender": "male",
+  "currency": "USD",
+  "synopsis": "John, a married male traveling with his wife, has planned a romantic getaway to Rome from London. His trip is scheduled for March 4 to March 7, 2026, for a total of 3 nights. He selected a package that includes both flights and a hotel. Although his initial flight preference was BA, he ultimately chose the Cheapest Flight option operated by AZ, featuring a direct flight from London City (LCY) to Rome Fiumicino (FCO). For accommodation, he opted for the Pantheon hotel under the Comfortable Experience category—with a preference for a location near the Pantheon, breakfast included, and bicycle rentals. The itinerary is enriched with recommendations for sightseeing and cultural events, providing a detailed plan that meets his romantic and cultural interests.",
   "sentiment": "positive",
-  "spouse_name": "",
+  "travelers": 2,
+  "project_id": "",
+  "return_date": "2026-03-07",
   "stop_reason": "satisfied_customer",
-  "start_dates_of_interest": [
-    "2025-09-03",
-    "2025-09-10"
-  ],
-  "end_dates_of_interests" : [
-    "2025-09-07",
-    "2025-09-15"
-  ],
-  "total_price": [
-    1606
-  ],
-  "trip_reason": "vacation",
-  "sold_product": "package",
+  "ucp_version": 4,
   "children_ages": [],
-  "customer_name": "John",
-  "vacation_type": [
-    "couple"
-  ],
-  "children_names": [],
-  "departure_city": "Tel-Aviv",
-  "marital_status": "Married",
-  "vacation_style": [
-    "romantic",
-    "shopping"
-  ],
-  "customer_budget": [],
+  "customer_name": "Oren",
+  "vacation_type": "couple",
+  "departure_city": "London",
+  "departure_date": "2026-03-04",
+  "marital_status": "married",
+  "vacation_style": "cultural",
   "asked_for_coupon": false,
-  "food_preferences": [],
-  "departure_airport": [],
+  "food_preferences": [
+    "sushi"
+  ],
+  "room_preferences": [],
+  "departure_airport": "London City (LCY)",
   "hotel_preferences": [
-    "central location"
-  ],
-  "medical_condition": [],
-  "chosen_hotel_brand": [
-    "Alinea"
-  ],
-  "chosen_departure_date": "2025-09-10",
-  "chosen_return_date": "2025-09-15",
-  "chosen_destination_cities": [
-    "Limassol"
+    "near the Pantheon",
+    "breakfast included",
+    "bicycle rentals"
   ],
   "chosen_hotel_names": [
-    "Alinea Market Agora Square"
+    "Pantheon"
   ],
-  "chosen_airlines": [
-    "Arkia Israeli Airlines"
+  "flight_preferences": [
+    "Preferred Departure Time: anytime",
+    "Preferred Return Time: anytime",
+    "Direct Flight",
+    "Preferred Departure Airports: Any airport"
   ],
-  "flight_preferences": [],
-  "requested_room_type": [],
-  "chosen_hotel_category": [
-    "Elegant Experience"
+  "medical_conditions": [],
+  "preferred_airlines": [
+    "BA"
+  ],
+  "chosen_hotel_brands": [],
+  "chosen_product_type": "package",
+  "asked_about_security": false,
+  "chosen_airline_brands": [
+    "AZ"
   ],
   "religious_preferences": [],
-  "chosen_flight_category": [
+  "conversation_end_stage": "booking_successful",
+  "preferred_hotel_brands": [],
+  "preferred_travel_month": [
+    "March"
+  ],
+  "averageprice_per_person": 994.5,
+  "chosen_hotel_categories": [
+    "Comfortable Experience"
+  ],
+  "chosen_flight_categories": [
     "Cheapest Flight"
   ],
-  "conversation_end_stage": "package_found_booking_link_shown",
-  "final_adult_passengers": 2,
-  "preferred_hotel_brands": [
-    "Hilton",
-    "Hyatt"
+  "chosen_destination_cities": [
+    "Rome"
   ],
-  "requested_destinations": [],
-  "final_infant_passengers": -1,
-  "preferred_airline_brand": [],
-  "average_price_per_person": [
-    803
-  ],
-  "preferred_airline_brands": [
-    "El Al",
-    "Arkia"
-  ],
-  "final_children_passengers": -1,
-  "preferred_traveling_month": [
-    "September"
+  "requested_destination_cities": [
+    "Rome"
   ]
 }
 ```
