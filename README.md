@@ -77,7 +77,6 @@ VIA will call your webhook with the following payload:
 {
   "timstamp": "<TIMESTAMP IN ISO FORMAT>",
   "project_id": "<PROJECT ID>",
-  "conversation_id": "<CONVERSATION_ID>",
   "event_id": "<EVENT_ID>", 
   "event_payload": "<EVENT PAYLOAD OBJECT>"
 }
@@ -90,6 +89,7 @@ This event will be generated as a response to a ``/api/message`` call. The event
 
 ```json
 {
+  "conversation_id": "<CONVERSATION_ID>",
   "via_api_reply": {
     "response_type": "<RESPONSE TYPE (presentation schema name)>",
     "response": "<AI GENERATED PRESENTATION OBJECT>"
